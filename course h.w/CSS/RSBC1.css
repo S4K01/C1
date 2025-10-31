@@ -1,0 +1,24 @@
+:root {
+  --mainPadding: 15px;
+  --secPadding: 10px;
+  --first-mainColor: #ff5722;
+  --sec-mainColor: #03a9f4;
+  --font-size: 17px;
+  --font-weight: bold;
+  --box-shadow: 4px 0 5px 0px #ff5722 inset, -4px 0 5px 0 #03a9f4 inset;
+  --background-Color: #eeeeee;
+  --backGround-color: #009688;
+  --pagebackground-color: #eeeeee;
+  --pagecontentbackground-color: #dddddd;
+  --pagecontentcolor: #000;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
