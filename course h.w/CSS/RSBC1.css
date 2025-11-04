@@ -20,5 +20,253 @@
   -o-box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
+  list-style: none;
+  text-decoration: none;
 }
 
+body {
+  margin: 0;
+}
+
+nav div {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  padding: 5px;
+}
+
+nav div .logo {
+  display: flex;
+  align-items: center;
+  transform: translate(50%, 0%);
+  -webkit-transform: translate(50%, 0%);
+  -moz-transform: translate(50%, 0%);
+  -ms-transform: translate(50%, 0%);
+  -o-transform: translate(50%, 0%);
+}
+
+nav div .logo h2 {
+  font-weight: 100;
+  letter-spacing: 5px;
+  font-size: 15px;
+  color: #000;
+  padding: 10px;
+  position: relative;
+}
+
+nav div .logo h2::before {
+  content: "\212C \211B ";
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: -45%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  transform: translate(10%, -50%);
+  -webkit-transform: translate(10%, -50%);
+  -moz-transform: translate(10%, -50%);
+  -ms-transform: translate(10%, -50%);
+  -o-transform: translate(10%, -50%);
+}
+
+nav div .logo:hover,
+nav div .logo:hover h2::before,
+nav div ul li a:hover {
+  background-color: #ccc;
+}
+
+nav div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav div ul li {
+  padding: 10px;
+}
+
+nav div ul li a {
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  padding: 10px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header div {
+  padding: 10px;
+  position: relative;
+  z-index: -9;
+}
+
+header div img {
+  width: 1500px;
+  height: 700px;
+}
+
+header div h1 {
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -75%);
+  -webkit-transform: translate(-25%, -75%);
+  -moz-transform: translate(-25%, -75%);
+  -ms-transform: translate(-25%, -75%);
+  -o-transform: translate(-25%, -75%);
+}
+
+header div h1::before {
+  content: "\212C \211B ";
+  height: 150%;
+  background-color: #000000aa;
+  position: absolute;
+  top: 50%;
+  left: -45%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+}
+
+article .projects {
+  padding-left: 10px;
+}
+
+article .projects h3 {
+  font-weight: 100;
+  margin-bottom: 35px;
+  padding: 15px;
+  font-size: 23px;
+}
+
+article .projects .projects-imgs {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: " . img img ." " . img img .";
+  margin-left: 0px;
+  padding: 25px;
+}
+
+.projects-imgs div img {
+  width: 350px;
+  position: relative;
+}
+
+.projects-imgs div {
+  position: relative;
+}
+
+.projects-imgs div::before {
+  content: "House";
+  color: #fff;
+  background-color: #000;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+}
+
+#about {
+  padding: 25px;
+  margin-bottom: 70px;
+}
+
+#about h3 {
+  font-weight: 100;
+  margin-bottom: 35px;
+  font-size: 23px;
+}
+
+#about .teams {
+  display: grid;
+  grid-template-columns: repeat(4, 370px);
+  grid-template-rows: 400px;
+}
+
+.teams figure img {
+  width: 350px;
+  margin-left: -35px;
+  filter: grayscale(0.75);
+  -webkit-filter: grayscale(0.75);
+}
+
+.teams figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  position: relative;
+}
+
+.teams figure::after {
+  content: "Contact";
+  cursor: pointer;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -50px;
+  left: -35px;
+  width: 120%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccccc;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.teams figure:hover::after{
+  background-color: #8b8989;
+}
+
+.teams figure figcaption,
+.teams figure p {
+  margin-left: -25px;
+}
+
+.teams figure figcaption {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.teams figure p {
+  line-height: 1.3;
+  color: #272626;
+}

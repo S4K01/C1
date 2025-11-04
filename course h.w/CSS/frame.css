@@ -1,0 +1,34 @@
+.links-side{
+    text-decoration: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.hover:hover{
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    padding: 15px 15px;
+}
+
+.article{
+    padding: 15px 15px;
+    margin-right: 350px;
+    margin-bottom: 10ch;
+}
+
+.h2{
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+    color: teal;
+    font-size: 28px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.para{
+    font-size: 14px;
+    line-height: 3ch;
+}
